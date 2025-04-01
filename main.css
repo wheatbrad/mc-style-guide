@@ -1,0 +1,453 @@
+/*******************************************
+* General
+*******************************************/
+.oz-section-label {
+  margin: 20px 0 0 0;
+  padding-bottom: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #4c4c4e;
+  border-bottom: 2px solid #00a39d;
+}
+
+.oz-subsection-label {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.oz-instruction {
+  margin: 2px 0 5px;
+  font-size: 11px;
+  font-style: italic;
+  color: #444;
+}
+
+.oz-instruction>span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.oz-grouped-edit-field {
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.oz-note {
+  font-size: 12px;
+  line-height: 14px;
+  font-style: italic;
+  margin: 0;
+  color: #666;
+}
+
+a.oz-download {
+  display: block;
+  padding: 7px;
+  background: #5f259f;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+a.oz-download:hover {
+  background-color: #4a1d7c;
+  color: #fff;
+}
+
+input[type="checkbox"] {
+  /* display: table-cell; */
+  vertical-align: top;
+  margin: 5px 5px 0 0;
+  padding: 0;
+}
+
+input[type="checkbox"]+span {
+  display: inline-block;
+  max-width: 90%;
+  margin: 3px 0 0 0;
+}
+
+.oz-spaceAbove {
+  margin-top: 15px;
+}
+
+.oz-divider {
+  height: 1px;
+  background-color: #ccc;
+  padding: 0;
+  margin: 10px auto;
+}
+
+/*******************************************
+* Scrolling Note Box
+*******************************************/
+
+.oz-scrolling-note-box {
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  height: 100px;
+  overflow-y: scroll;
+  padding: 5px;
+}
+
+.oz-scrolling-note-box ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.oz-scrolling-note-box ul li {
+  margin: 0 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.oz-scrolling-note-box h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/*******************************************
+* Modal
+*******************************************/
+.oz-modal-bg {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+
+.oz-modal-bg.active {
+  display: block;
+}
+
+.oz-modal-bg.hidden {
+  display: none;
+}
+
+.oz-warning-modal {
+  width: 400px;
+  margin: 20% auto 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.oz-warning-modal p {
+  text-align: center;
+  color: #333333;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.oz-warning-modal button {
+  width: 30%;
+  margin: 15px auto 0 auto;
+}
+
+.oz-modal-container {
+  position: relative;
+}
+
+.oz-modal {
+  position: absolute;
+  top: 0px;
+  left: 240px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: box-shadow 0.3s cubic-bezier(.25, .8, .25, 1);
+  z-index: 100;
+}
+
+.oz-modal:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.oz-modal sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -2px;
+  font-size: 8px;
+}
+
+.oz-modal ol {
+  height: 200px;
+  margin: 0;
+  padding: 10px 35px;
+  font-size: 12px;
+  overflow-y: scroll;
+}
+
+.oz-modal ol li {
+  margin-bottom: 5px;
+}
+
+.oz-modal-footnote {
+  font-size: 10px;
+  line-height: 12px;
+  border-top: 1px solid #eaeaea;
+}
+
+.oz-modal-header-note {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.oz-modal-header h3,
+.oz-modal-header-note,
+.oz-modal-footnote {
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.oz-modal-header-note,
+.oz-modal-footnote {
+  color: #666;
+  background-color: #f8f8f8;
+  padding: 2px 12px;
+}
+
+.oz-modal-header h3 {
+  color: #fff;
+  font-weight: normal;
+  padding: 2px 0 0 12px;
+}
+
+.oz-modal-header {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 32px;
+  background-color: #006061;
+  color: #fff;
+  padding: 0 7px;
+}
+
+.oz-table {
+  display: table;
+  border-collapse: separate;
+}
+
+.oz-table-cell {
+  display: table-cell;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.oz-cell-bg-dkblue {
+  background-color: #495966;
+  color: #fff;
+}
+
+.oz-cell-bg-blue {
+  background-color: #dae0e8;
+}
+
+.oz-cell-bg-grey {
+  background-color: #f3f3f4;
+}
+
+.oz-cell-border-right-white {
+  border-right: 1px solid #fff;
+}
+
+.oz-cell-border-bottom-white {
+  border-bottom: 1px solid #fff;
+}
+
+.oz-table-row {
+  display: table-row;
+}
+
+.odd-row {
+  background-color: #f1f3f9;
+}
+
+.oz-table-row-header {
+  font-weight: bold;
+  width: 150px;
+}
+
+.oz-grey-row {
+  background-color: #495965;
+  color: #fff;
+}
+
+.oz-btn {
+  margin: 15px 0;
+  display: block;
+  padding: 7px;
+  border: 0;
+  background: #5f259f;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.oz-btn:hover,
+.oz-btn-active {
+  background-color: #4a1d7c;
+  color: #fff;
+}
+
+.oz-btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background-color: #bfbfbf;
+  cursor: pointer;
+  transition: background-color 0.4s ease-out;
+}
+
+.oz-btn-close:hover {
+  background-color: #e55039;
+}
+
+.oz-btn-close::before {
+  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="%23FFF" d="M17.061 16l5.127-5.127c.293-.293.293-.768 0-1.061s-.768-.293-1.061 0L16 14.939l-5.126-5.127c-.293-.293-.768-.293-1.061 0s-.293.768 0 1.061L14.939 16l-5.126 5.127c-.293.293-.293.768 0 1.061.146.146.338.22.53.22s.384-.073.53-.22L16 17.061l5.127 5.127c.146.146.338.22.53.22s.384-.073.53-.22c.293-.293.293-.768 0-1.061L17.061 16z"/></svg>');
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.oz-hidden {
+  display: none !important;
+}
+
+.space__above {
+  margin-top: 10px;
+}
+
+.spaceAbove {
+  margin-top: 15px;
+}
+
+.spaceBelow {
+  padding-bottom: 10px;
+}
+
+.borderAbove {
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 0;
+
+}
+
+.borderBottom {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 0 0 0;
+  margin-bottom: 15px;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.oz-scrollbox {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+/***********************************************************************
+* Mouseover / ToolTip Chart
+************************************************************************/
+.oz-tooltip-container {
+  position: relative;
+}
+
+.oz-tooltip {
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.oz-tooltip table {
+  width: 100%;
+  background-color: #003057;
+  margin-bottom: 2px;
+}
+
+.oz-tooltip table:last-child {
+  margin-bottom: 0;
+}
+
+.oz-tooltip td {
+  padding: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+td.oz-tooltip-templateLabel {
+  background-color: #4473cb;
+  color: #fff;
+}
+
+td.oz-tooltip-columnHead,
+td.oz-tooltip-rowHead {
+  background-color: #d3dce5;
+}
+
+.oz-tooltip-columnHead {}
+
+.oz-tooltip-rowHead {
+  width: 70px;
+}
+
+/***********************************************************************
+* Dragula & Draggable elements
+************************************************************************/
+.oz-draggable-container {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.oz-draggable-container .oz-form-field-container,
+.gu-mirror {
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fafafa;
+  margin: 0 0 10px 0;
+}
+
+.oz-form-field-container:last-child {
+  margin: 0 0 0 0;
+}
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  font-family: Verdana, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
